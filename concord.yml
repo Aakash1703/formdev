@@ -4,6 +4,11 @@ configuration:
 
 flows:
   formdev:
+  - form: myForm
+    saveSubmittedBy: true
+    
+  - log: "Hello, ${myForm.submittedBy.displayName}"
+  
     - task: http
       in:
         url: "https://jsonplaceholder.typicode.com/todos/${todoId}"
