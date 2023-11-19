@@ -20,6 +20,7 @@ flows:
         - log: "All done!"
       else:
         - log: "You got a todo item: ${myTodo.content.title}"
+        
    - script: python
       body: |
       x = 2 * 3;
