@@ -4,10 +4,10 @@ configuration:
 
 flows:
   formdev:
-  - form: myForm
-    saveSubmittedBy: true
+    - form: myForm
+      saveSubmittedBy: true
     
-  - log: "Hello, ${myForm.submittedBy.displayName}"
+    - log: "Hello, ${myForm.submittedBy.displayName}"
   
     - task: http
       in:
