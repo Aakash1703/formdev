@@ -21,10 +21,10 @@ flows:
       else:
         - log: "You got a todo item: ${myTodo.content.title}"
         
-   - script: python
+    - script: python
       body: |
-      x = 2 * 3;
-      execution.setVariable("result", x)
+        x = 2 * 3;
+        execution.setVariable("result", x)
 
     - log: ${result}
 
