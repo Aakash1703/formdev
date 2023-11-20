@@ -27,8 +27,8 @@ flows:
       body: |
         import json
 
-     #   with open('hi.json', 'r') as file:
-      #  data = json.load(file)
+         with open('hi.json', 'r') as file:
+            data = json.load(file)
 
       #  print(data)
 
