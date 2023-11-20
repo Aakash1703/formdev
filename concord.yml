@@ -25,8 +25,12 @@ flows:
         
     - script: python
       body: |
-        x = 2 * 3;
-        execution.setVariable("result", x)
+        import json
+
+        with open('hi.json', 'r') as file:
+          data = json.load(file)
+
+        print(data)
 
     - log: ${result}
 
